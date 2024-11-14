@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para tu</title>
+
+    <style>
+        body {
+            background-color: #f0ebe1; 
+            font-family: 'Georgia', serif; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .carta {
+            background-color: #fffaf0; 
+            width: 90%; 
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #d3c8b4; 
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            text-align: left;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contenido p {
+            margin-bottom: 18px;
+            text-indent: 30px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .firma {
+            margin-top: 30px;
+            text-align: right;
+            font-style: italic;
+        }
+        .carta {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .contenido p {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #333;
+            animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+            width: 100%; /* Ajustar al tamaño del contenedor */
+        }
+        
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #333; }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 1.5;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 2;
+                transform: translateY(0);
+            }
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        .contenido p {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #333;
+            animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        
+        /* Media query para pantallas más grandes */
+        @media (min-width: 768px) {
+            .carta {
+                padding: 40px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .contenido p {
+                font-size: 18px;
+            }
+
+            .firma {
+                margin-top: 40px;
+            }
+        }
+        /* Media query para pantallas muy pequeñas (móviles) */
+        @media (max-width: 480px) {
+            .contenido p {
+                font-size: 14px;
+                text-indent: 15px;
+            }
+
+            header h1 {
+                font-size: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="carta">
+            <h1>Querida Yan</h1>
+        </header>
+        <section class="">
+            <section>
+                
+            </section>
+            <p>Hola yan, espero que tengas un lindo dia y un feliz cumpleaños, han pasado muchas cosas
+               ultimamente y bueno sabes que estoy ahi.
+            </p>
+            <p>[Aqui hay un pequeño --->Link]</p>
+
+            <audio controls autoplay loop>
+                <source src="/ParaTu/Recursos/Mañanitas.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </section>
+        <footer class="firma">
+            <p>Con cariño,</p>
+            <p>[Lalo]</p>
+            <button onclick="window.print()">Imprimir esta carta</button>
+        </footer>
+    </div>
+</body> 
+</html>
