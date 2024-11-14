@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para tu</title>
+    <title>Para ti</title>
 
     <style>
         body {
-            background-color: #f0ebe1; 
-            font-family: 'Georgia', serif; 
+            background-color: #f7f3e9; /* Fondo más claro */
+            font-family: 'Merriweather', serif; /* Tipografía más elegante */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,79 +19,87 @@
         }
 
         .carta {
-            background-color: #fffaf0; 
-            width: 90%; 
-            max-width: 800px;
-            padding: 20px;
-            border: 1px solid #d3c8b4; 
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #fff8e6; /* Fondo cálido */
+            width: 90%;
+            max-width: 750px;
+            padding: 30px;
+            border: 2px solid #e3d5c1; /* Borde sutil */
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            position: relative;
+            overflow: hidden;
         }
 
         header h1 {
-            text-align: left;
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #333;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #5a4e3b; /* Texto marrón */
         }
 
         .contenido p {
-            margin-bottom: 18px;
+            margin-bottom: 20px;
             text-indent: 30px;
-            line-height: 1.6;
-            font-size: 16px;
+            line-height: 1.8;
+            font-size: 17px;
+            color: #3d352b; /* Color de texto más suave */
         }
 
         .firma {
             margin-top: 30px;
             text-align: right;
             font-style: italic;
+            color: #5a4e3b;
         }
+
         .carta {
             animation: fadeIn 1.5s ease-in-out;
         }
-        .contenido p {
-            display: inline-block;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 2px solid #333;
-            animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-            width: 100%; /* Ajustar al tamaño del contenedor */
+
+        audio {
+            display: block;
+            margin: 20px 0;
+            outline: none;
+            width: 100%; /* Control se adapta */
+            background-color: #e3d5c1; /* Fondo del control */
+            border-radius: 10px;
+            padding: 10px;
+            border: 2px solid #a4896b; /* Borde igual al botón */
+            margin-top: 20px;
         }
-        
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
+
+        button {
+            background-color: #d3bfa8;
+            border: 2px solid #a4896b;
+            color: #333;
+            padding: 10px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            margin-top: 15px;
         }
-        
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: #333; }
+
+        button:hover {
+            background-color: #b89a7e;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
+        button:active {
+            background-color: #8d7156;
+        }
+
         @keyframes fadeIn {
             from {
-                opacity: 1.5;
+                opacity: 0;
                 transform: translateY(20px);
             }
             to {
-                opacity: 2;
+                opacity: 1;
                 transform: translateY(0);
             }
         }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        
-        .contenido p {
-            width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 2px solid #333;
-            animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-        }
-        
+
         /* Media query para pantallas más grandes */
         @media (min-width: 768px) {
             .carta {
@@ -99,54 +107,51 @@
             }
 
             header h1 {
-                font-size: 28px;
+                font-size: 32px;
             }
 
             .contenido p {
-                font-size: 18px;
+                font-size: 19px;
             }
 
             .firma {
                 margin-top: 40px;
             }
         }
-        /* Media query para pantallas muy pequeñas (móviles) */
+
+        /* Media query para pantallas pequeñas */
         @media (max-width: 480px) {
             .contenido p {
-                font-size: 14px;
-                text-indent: 15px;
+                font-size: 15px;
+                text-indent: 20px;
             }
 
             header h1 {
-                font-size: 20px;
+                font-size: 24px;
             }
         }
-
     </style>
 </head>
 <body>
     <div class="carta">
-            <h1>Querida Yan</h1>
+        <header>
+            <h1>Feliz Cumpleaños Yan</h1>
         </header>
         <section class="">
-            <section>
-                
-            </section>
-            <p>Hola yan, espero que tengas un lindo dia y un feliz cumpleaños, han pasado muchas cosas
-               ultimamente y bueno sabes que estoy ahi.
+            <p>Holaa Yan, espero que tengas un lindo día y un feliz cumpleaños. 
+               De todo corazón, espero que la pases muy bien con tu familia y amigos.
             </p>
-            <p>[Aqui hay un pequeño --->Link]</p>
-
+            <p><em>"Lo esencial es invisible a los ojos."</em></p>
             <audio controls autoplay loop>
-                <source src="/ParaTu/Recursos/Mañanitas.mp3" type="audio/mpeg">
+                <source src="Recursos/Mañanitas.mp3" type="audio/mpeg">
                 Tu navegador no soporta la reproducción de audio.
             </audio>
         </section>
         <footer class="firma">
             <p>Con cariño,</p>
             <p>[Lalo]</p>
-            <button onclick="window.print()">Imprimir esta carta</button>
+            <button onclick="window.print()">Imprimir</button>
         </footer>
     </div>
-</body> 
+</body>
 </html>
